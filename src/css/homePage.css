@@ -1,0 +1,46 @@
+/* App.css */
+
+body {
+    font-family: "Georgia", serif;
+    background-color: #f7f7f7;
+    display: inline;
+  }
+  
+  .homepage {
+    text-align: center;
+  }
+  
+  .header {
+    background-image: url("../images/pexels-lumn-295771.jpg"); /* Add a background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  .header-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .content {
+    padding: 100px;
+  }
+  
