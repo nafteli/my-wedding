@@ -1,15 +1,17 @@
 /* App.css */
 
-body {
+/* body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
   text-align: center;
   margin: 0;
   padding: 0;
-}
+  display: flex;
+} */
 
 .countdown-container {
-  background-color: #7aeb92;
+  /* background-color: #7aeb92; */
+  place-items: center;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

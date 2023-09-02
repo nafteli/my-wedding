@@ -2,8 +2,10 @@
 
 body {
     font-family: "Georgia", serif;
-    background-color: #f7f7f7;
-    display: inline;
+    background-color: #d357c1;
+    display: flex;
+    place-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
   .homepage {
@@ -11,12 +13,13 @@ body {
   }
   
   .header {
-    background-image: url("../images/pexels-lumn-295771.jpg"); /* Add a background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    padding: 100px 0;
+    color: #d357c1;
+    /* padding: 100px 0; */
+    height: 75%;
+    width: 100%;
+    margin-top: 50%;
+    margin-left: 100%;
+    backdrop-filter: blur(10px);
   }
   
   .header-content {
@@ -31,13 +34,13 @@ body {
   }
   
   h2 {
-    font-size: 24px;
+    font-size: 65px;
     margin-bottom: 20px;
   }
   
   p {
-    font-size: 18px;
-    color: #fff;
+    font-size: 33px;
+    color: #d357c1;
   }
   
   .content {

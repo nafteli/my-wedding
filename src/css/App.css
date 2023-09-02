@@ -1,0 +1,9 @@
+body {
+    background-image: url("../images/backgroundImage.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    /* Add other styling properties as needed */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
