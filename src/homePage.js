@@ -11,10 +11,10 @@ const HomePage = ({brideName, groomName, weddingDate}) => {
     return (
       <div className="homepage">
         <header className="header">
-          <h1>החתונה של</h1>
+          {/* <h1>החתונה של</h1> */}
           <h2>{brideName} & {groomName}</h2>
           <p>שמרו את התאריך</p>
-          <p> {jewishDateInHebrewStr} - {weddingDate.toJSON().split('T')[0]}</p>
+          <p className="date"> {jewishDateInHebrewStr} - {weddingDate.toJSON().split('T')[0]}</p>
         </header>
       </div>
     );

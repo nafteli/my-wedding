@@ -1,49 +1,43 @@
-/* App.css */
+.homepage {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-body {
-    font-family: "Georgia", serif;
-    background-color: #d357c1;
-    display: flex;
-    place-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .homepage {
-    text-align: center;
-  }
-  
-  .header {
-    color: #d357c1;
-    /* padding: 100px 0; */
-    height: 75%;
-    width: 100%;
-    margin-top: 50%;
-    margin-left: 100%;
-    backdrop-filter: blur(10px);
-  }
-  
-  .header-content {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  h2 {
-    font-size: 65px;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 33px;
-    color: #d357c1;
-  }
-  
-  .content {
-    padding: 100px;
-  }
-  
+.header {
+  color: #d357c1;
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 65px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+p {
+  font-size: 33px;
+  color: #d357c1;
+}
+
+.data {
+  font-size: 50px;
+}
+
+.content {
+  padding: 100px;
+}

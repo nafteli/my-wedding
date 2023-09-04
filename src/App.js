@@ -2,6 +2,7 @@ import React from "react";
 // import Countdown from "react-countdown";
 import HomePage from "./homePage";
 import CountDown from "./countdown";
+import SaveTheDate from "./saveButton"
 
 import "./css/App.css"; // Make sure to create an appropriate CSS file
 
@@ -13,7 +14,8 @@ function App() {
   return (
     <div className="appDiv">
       <HomePage weddingDate={weddingDate} brideName={brideName} groomName={groomName}/>
-        <CountDown weddingDate={weddingDate} brideName={brideName} groomName={groomName}/>
+      <CountDown weddingDate={weddingDate} brideName={brideName} groomName={groomName}/>
+      <SaveTheDate weddingDate={weddingDate} />
     </div>
   );
 }
