@@ -1,12 +1,8 @@
 import React from "react";
-import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 const SaveTheDate = ({weddingDate}) => {
-  console.log(weddingDate.toJSON().split('T')[0], weddingDate.toJSON().split('T')[1].slice(0, 5));
   const saveToCalendar = () => {
-    console.log(navigator.userAgent);
-    window.open(
-    );
+    window.open("https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NzFqMzhlMzRjZ3JqaWI5b2M5aTNhYjlrYzlpajBiYjJja3AzMmI5bTZ0aTZjZHBoNjVoNjJlYjY2cyBuYWZ0YWxpMjA1NUBt&tmsrc=naftali2055%40gmail.com");
   };
   return (
     <div className="saveButton">

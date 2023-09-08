@@ -7,7 +7,7 @@ import SaveTheDate from "./saveButton"
 import "./css/App.css"; // Make sure to create an appropriate CSS file
 
 function App() {
-  const weddingDate = new Date("2023-11-16T19:30:00");
+  const weddingDate = new Date("2023-11-29T19:30:00");
   const brideName = "נפתלי";
   const groomName = "רחלי";
 
