@@ -4,12 +4,13 @@ import {
     formatJewishDateInHebrew,
   } from "jewish-date";import "./css/homePage.css"
 
-const HomePage = ({brideName, groomName, weddingDate}) => {  
+import saveToCalendar from "./saveButton"
+
+const HomePage = ({brideName, groomName, weddingDate, startDate, startTime, endTime}) => {  
     const jewishDate = toJewishDate(weddingDate);
-    // const jewishDateInHebrew = toHebrewJewishDate(jewishDate);
     const jewishDateInHebrewStr = formatJewishDateInHebrew(jewishDate);
     return (
-      <div className="homepage">
+      <div className="homepage" onClick={() => saveToCalendar(startDate, startTime, endTime, brideName, groomName)}>
         <header className="header">
           {/* <h1>החתונה של</h1> */}
           <h2>{brideName} & {groomName}</h2>

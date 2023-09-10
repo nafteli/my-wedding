@@ -1,14 +1,18 @@
-import React from "react";
+// import React from "react";
+import { atcb_action } from "add-to-calendar-button";
 
-const SaveTheDate = ({weddingDate}) => {
-  const saveToCalendar = () => {
-    window.open("https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NzFqMzhlMzRjZ3JqaWI5b2M5aTNhYjlrYzlpajBiYjJja3AzMmI5bTZ0aTZjZHBoNjVoNjJlYjY2cyBuYWZ0YWxpMjA1NUBt&tmsrc=naftali2055%40gmail.com");
-  };
-  return (
-    <div className="saveButton">
-      <button onClick={saveToCalendar}>שמרו את התאריך</button>
-    </div>
-  );
+export const saveToCalendar = (startDate, startTime, endTime, brideName, groomName) => {
+  atcb_action({
+    name: `חתונה ${brideName} \u{1F48D} ${groomName}`,
+    description:
+      "מחכים לראות אתכם",
+    startDate: `${startDate}`,
+    endDate: `${startDate}`,
+    startTime: `${startTime}`,
+    endTime: `${endTime}`,
+    options: ["Google"],
+    timeZone: "Asia/Jerusalem",
+  });
 };
 
-export default SaveTheDate;
+export default saveToCalendar;
