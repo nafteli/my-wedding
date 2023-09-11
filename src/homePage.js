@@ -6,11 +6,11 @@ import {
 
 import saveToCalendar from "./saveButton"
 
-const HomePage = ({brideName, groomName, weddingDate, startDate, startTime, endTime}) => {  
+const HomePage = ({brideName, groomName, weddingDate, Wedding}) => {  
     const jewishDate = toJewishDate(weddingDate);
     const jewishDateInHebrewStr = formatJewishDateInHebrew(jewishDate);
     return (
-      <div className="homepage" onClick={() => saveToCalendar(startDate, startTime, endTime, brideName, groomName)}>
+      <div className="homepage" onClick={() => saveToCalendar(Wedding)}>
         <header className="header">
           {/* <h1>החתונה של</h1> */}
           <h2>{brideName} & {groomName}</h2>

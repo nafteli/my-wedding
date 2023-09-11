@@ -7,10 +7,6 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <script
-      src="https://apis.google.com/js/api.js"
-      type="text/javascript"
-    ></script>
     <App />
   </React.StrictMode>
 );

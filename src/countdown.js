@@ -30,7 +30,7 @@ const CountDown = ({ weddingDate, brideName, groomName }) => {
             ) : null}
             {weeks ? (
               <div className="countdown-unit">
-                <span className="countdown-value">{weeks}</span>
+                <span className="countdown-value">{weeks - months * 4}</span>
                 <span className="countdown-label">
                   {" "}
                   {weeks > 1 ? "שבועות" : "שבוע"}{" "}
@@ -38,7 +38,7 @@ const CountDown = ({ weddingDate, brideName, groomName }) => {
               </div>
             ) : null}
             <div className="countdown-unit">
-              <span className="countdown-value">{days}</span>
+              <span className="countdown-value">{days - weeks * 7}</span>
               <span className="countdown-label">
                 {" "}
                 {days !== 1 ? "ימים" : "יום"}{" "}
