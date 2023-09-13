@@ -28,3 +28,7 @@ body {
     align-items: center;
     align-content: center;
   }
+
+  .buttonDiv {
+    box-shadow: 15px 15px 10px gray;
+  }
