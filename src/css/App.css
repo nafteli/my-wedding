@@ -11,11 +11,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: "SecularOne-Regular";
-    /* font-weight: 300; */
-    /* background-color: #d357c1; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-    /* width: 100vw; */
-    /* height: 100vh; */
     align-content: center;
     align-items: center;
   }
@@ -31,4 +26,11 @@ body {
 
   .buttonDiv {
     box-shadow: 15px 15px 10px pink;
+    backdrop-filter: blur(10px);
+  }
+
+  strong {
+    font-weight: bold;
+    color: #d357c1;
+    font-size: large;
   }

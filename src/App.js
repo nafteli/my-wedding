@@ -6,8 +6,8 @@ import "./css/App.css";
 
 function App() {
   let weddingDate = new Date("2023-11-29T19:30:00");
-  let groomName = "רחלי";
-  let brideName = "נפתלי";
+  let groomName = "נפתלי";
+  let brideName = "רחלי";
   const startDate = `${weddingDate.getFullYear()}-${
     weddingDate.getMonth() + 1
   }-${weddingDate.getDate()}`;
@@ -17,7 +17,7 @@ function App() {
     29 + +startTime.split(":")[1]
   }`;
   const Wedding = {
-    name: `חתונה ${brideName} \u{1F48D} ${groomName}`,
+    name: `חתונה ${groomName} \u{1F48D} ${brideName}`,
     location: "עטרת פרידמן אלעד",
     startDate: startDate,
     endDate: startDate,
@@ -40,6 +40,7 @@ function App() {
         brideName={brideName}
         groomName={groomName}
       />
+      <strong>{`\u{1F447}`.repeat(5)} לחצו כאן</strong>
       <div className="buttonDiv">
         <AddToCalendarButton
           name={Wedding.name}

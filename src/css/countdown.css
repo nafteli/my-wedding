@@ -24,8 +24,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 3px inset pink;
-  border-radius: 25%; */
 }
 
 .countdown-value {
